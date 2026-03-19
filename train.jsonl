@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a deterministic constraint translator. Extract the variables from the user's request and output ONLY a raw JSON object matching the defined schema. Do not include markdown formatting or explanations."
+    },
+    {
+      "role": "user",
+      "content": "Can we get someone senior to handle the database migration this Saturday? Try to keep it under two grand."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"cost\": 2000, \"is_weekend\": true, \"engineer_level\": 3, \"task_type\": \"db_migration\"}"
+    }
+  ]
+}
